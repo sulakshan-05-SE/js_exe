@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <h1>Fahrenheit to Celsius Converter</h1>
+    <body>
+    <div id="wrapper">
+        <h2>cm to inches</h2>
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="length in cm">
+        </div>
+        <div>
+            <button type="submit" onclick="convert()">Convert to inches</button>
+        </div>
+        <div id="result">
+
+    <script>
+        function convert(){
+            let fahrenheit = Number(document.getElementById("input").value)
+            let cel=(5/9)*(fahrenheit-32)
+            document.getElementById("result").innerHTML = cel.toFixed(2) + " °C"
+
+        }
+    </script>
+</body>
+</html>
