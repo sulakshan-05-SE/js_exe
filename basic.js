@@ -34,3 +34,4 @@ var today = new Date();
   } 
   } 
 console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);
+
